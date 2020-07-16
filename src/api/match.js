@@ -1,20 +1,14 @@
 import Request from '../lib/request'
-import { REPORT_DEFAULT_CONFIG } from '../lib/ReportConfig'
 
 let url
 
-/**
- * TODO: BUG: No Se lee la configuración enviada desde Report
- * Se establece directamente el llamado a la región como recurso
- * mientras se investiga el porqué de esto.
- *
- */
-
 class Match {
-    constructor() {
+    constructor(config) {
+        this.config = config
+
         this.by = {
-            accountId: this.accountId.bind(),
-            matchId: this.matchId.bind(),
+            accountId: this.accountId.bind(this),
+            matchId: this.matchId.bind(this),
         }
     }
 
@@ -25,8 +19,7 @@ class Match {
      * @param {matchId} matchId - El gameId del match
      */
     matchId(matchId) {
-        //url = `https://${region}.api.riotgames.com/lol/match/v4/matches/${matchId}?api_key=${process.env.RIOT_API_KEY}`
-        url = `https://${REPORT_DEFAULT_CONFIG.region}.api.riotgames.com/lol/match/v4/matches/${matchId}?api_key=${process.env.RIOT_API_KEY}`
+        url = `https://${this.config.region}.api.riotgames.com/lol/match/v4/matches/${matchId}?api_key=${this.config.api_key}`
 
         return Request(url)
     }
@@ -37,8 +30,7 @@ class Match {
      * @param {accoundId} accountId El AccoundId del invocador
      */
     accountId(accountId, endIndex) {
-        //url = `https://${region}.api.riotgames.com/lol/match/v4/matchlists/by-account/${accountID}?endIndex=${endIndex}&api_key=${process.env.RIOT_API_KEY}`
-        url = `https://${REPORT_DEFAULT_CONFIG.region}.api.riotgames.com/lol/match/v4/matchlists/by-account/${accountId}?endIndex=${endIndex}&api_key=${process.env.RIOT_API_KEY}`
+        url = `https://${this.config.region}.api.riotgames.com/lol/match/v4/matchlists/by-account/${accountId}?endIndex=${endIndex}&api_key=${this.config.api_key}`
 
         return Request(url)
     }
