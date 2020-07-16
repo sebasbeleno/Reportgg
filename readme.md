@@ -10,27 +10,35 @@ Todos los días trabajamos en Streaming en este hermosos proyecto a las 12 PM ho
 
 # Uso
 
-    npm i reportgg
+npm i reportgg
 
-    const Report = require('reportgg')
-    const report = new Report('TU-RIOT-API-KEY')
+const Report = require('reportgg')
 
-    try {
+const report = new Report('TU-RIOT-API-KEY')
 
-    	let summoner = await report.summoner.by.name('justbel')
+try {
 
-    	console.log(summoner)
+let summoner = await report.summoner.by.name('justbel')
 
-    } catch (err){
-    	console.log(err)
-    }
+console.log(summoner)
+
+} catch (err){
+
+console.log(err)
+
+}
 
 # Endpoint
 
 > Se planean añadir más en el futuro ^^
 
-    report.summoner
-    report.match
+report.summoner
+
+report.match
+
+## Rate Limiting
+
+Utilizamos el modulo de [colorfulstan](https://github.com/colorfulstan), llamado [riot-ratelimiter](https://www.npmjs.com/package/riot-ratelimiter)
 
 ## Colaborar
 
