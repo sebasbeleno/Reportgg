@@ -1,6 +1,7 @@
 {
     "name": "reportgg",
-    "version": "0.0.3",
+    "version": "0.0.4",
+    "author": "Sebasbeleno <https://sebasbeleno.com/",
     "description": "Modulo completo de obtención de datos de la API de Riot Games",
     "main": "index.js",
     "scripts": {
@@ -8,16 +9,11 @@
         "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files"
     },
     "keywords": [],
-    "author": "",
     "license": "ISC",
     "dependencies": {
         "axios": "^0.19.2",
         "dotenv": "^8.2.0",
-        "prompt-sync": "^4.2.0",
-        "request": "^2.88.2",
-        "request-rate-limiter": "^2.0.3",
-        "riot-ratelimiter": "^0.1.5",
-        "underscore": "^1.10.2"
+        "request": "^2.88.2"
     },
     "devDependencies": {
         "@babel/cli": "^7.10.5",
