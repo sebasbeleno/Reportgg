@@ -21,7 +21,7 @@ class Summoner {
     summonerName(summonerName) {
         url = `https://${this.config.region}.api.riotgames.com/lol/summoner/v4/summoners/by-name/${summonerName}?api_key=${this.config.api_key}`
 
-        return Request(url)
+        return Request(url, this.config)
     }
 }
 

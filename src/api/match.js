@@ -21,7 +21,7 @@ class Match {
     matchId(matchId) {
         url = `https://${this.config.region}.api.riotgames.com/lol/match/v4/matches/${matchId}?api_key=${this.config.api_key}`
 
-        return Request(url)
+        return Request(url, this.config)
     }
 
     /**
@@ -32,7 +32,7 @@ class Match {
     accountId(accountId, endIndex) {
         url = `https://${this.config.region}.api.riotgames.com/lol/match/v4/matchlists/by-account/${accountId}?endIndex=${endIndex}&api_key=${this.config.api_key}`
 
-        return Request(url)
+        return Request(url, this.config)
     }
 }
 
