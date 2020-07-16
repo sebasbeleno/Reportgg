@@ -2,21 +2,23 @@ import Summoner from '../api/summoner'
 import Match from '../api/match'
 
 import { REPORT_DEFAULT_CONFIG } from './ReportConfig'
+
 class Report {
     constructor(
         key = process.env.RIOT_API_KEY,
-        config = REPORT_DEFAULT_CONFIG
+        config = REPORT_DEFAULT_CONFIG,
     ) {
-
         //Configuración de Report
+
+        config.api_key = key
 
         this.config = config
 
-        console.log(this.config.region)
-
-        this.summoner = new Summoner(config.region)
+        this.summoner = new Summoner(this.config)
         this.match = new Match(this.config)
     }
 }
 
-export default Report
+const init = (key) => new Report(key)
+
+module.exports = Report

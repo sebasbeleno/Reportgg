@@ -1,4 +1,3 @@
-
 ![Welcome to StackEdit!](https://i.imgur.com/1pgt3Dm.png)
 
 Una librería donde podrás trabajar fácilmente con la API de RiotGames.
@@ -9,24 +8,19 @@ Una librería donde podrás trabajar fácilmente con la API de RiotGames.
 
 Bienvenido [Report.gg](https://github.com/SebastianHerrera/Report.gg), podrás con nosotros obtener data de la API de RiotGames
 
-  Todos los días trabajamos en Streaming en este hermosos proyecto a las 12 PM hora Colombia en: [mi canal de Twitch](https://www.twitch.tv/justbel2), no dudes de darte una pasada ^^
-
-
+Todos los días trabajamos en Streaming en este hermosos proyecto a las 12 PM hora Colombia en: [mi canal de Twitch](https://www.twitch.tv/justbel2), no dudes de darte una pasada ^^
 
 ## Colaborar
 
 Siéntete completamente libre de aportar tus valiosos conocimientos al proyecto.
 
+## TODO
 
-  ## TODO
-
- - [x] Inicializar repo en github
- - [ ] Refactorizar código aplicando POO
- - [ ] Realizar modelo de Match y Champ para la analítica de datos.
- - [ ] Definir base de datos a utilizar o sistema de almacenamiento.
- - [ ] Aprender POO en JS >.>
-
-
+-   [x] Inicializar repo en github
+-   [ ] Refactorizar código aplicando POO
+-   [ ] Realizar modelo de Match y Champ para la analítica de datos.
+-   [ ] Definir base de datos a utilizar o sistema de almacenamiento.
+-   [ ] Aprender POO en JS >.>
 
 ### Disclaimer
 
