@@ -1,6 +1,6 @@
 {
     "name": "reportgg",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "author": "Sebasbeleno <https://sebasbeleno.com/",
     "description": "Modulo completo de obtención de datos de la API de Riot Games",
     "main": "index.js",
