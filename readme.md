@@ -6,6 +6,7 @@
 Una librería donde podrás trabajar fácilmente con la API de RiotGames.
 
 
+
 # Report.gg
 
 
@@ -21,12 +22,15 @@ Todos los días trabajamos en Streaming en este hermosos proyecto a las 12 PM ho
 # Uso
 
 
+
     npm i reportgg
 
 |
 
     const Report = require('reportgg')
-    const report = new Report('TU-RIOT-API-KEY')
+    const report = new Report('TU-RIOT-API-KEY', {
+	    region: 'la1'
+    })
 
     try {
 	    let summoner = await report.summoner.by.name('justbel')
@@ -38,6 +42,7 @@ Todos los días trabajamos en Streaming en este hermosos proyecto a las 12 PM ho
     }
 
 
+
 # Endpoint
 
 
@@ -45,19 +50,25 @@ Todos los días trabajamos en Streaming en este hermosos proyecto a las 12 PM ho
 > Se planean añadir más en el futuro ^^
 
 
-report.summoner
 
-report.match
+ - **report.summoner**
+
+ -  **report.match**
+
 
 
 ## Rate Limiting
 
 Utilizamos el modulo de  [colorfulstan](https://github.com/colorfulstan), llamado [riot-ratelimiter](https://www.npmjs.com/package/riot-ratelimiter)
 
+
+
 ## Colaborar
 
 
+
 Siéntete completamente libre de aportar tus valiosos conocimientos al proyecto.
+
 
 
 ### Disclaimer
