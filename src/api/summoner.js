@@ -1,8 +1,12 @@
 import Request from '../lib/request'
-import 'dotenv/config'
+import generateURL from '../utils/URLManager'
+import endponts from '../utils/endpoints'
 
 let url
 
+/**
+ * Modulo encargado de los invocadores
+ */
 class Summoner {
     constructor(config) {
         this.config = config
@@ -19,7 +23,9 @@ class Summoner {
      */
 
     summonerName(summonerName) {
-        url = `https://${this.config.region}.api.riotgames.com/lol/summoner/v4/summoners/by-name/${summonerName}?api_key=${this.config.api_key}`
+        let endpont = endponts.summoner.byName
+
+        url = generateURL(this.config, endpont, summonerName)
 
         return Request(url, this.config)
     }
