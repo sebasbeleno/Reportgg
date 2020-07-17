@@ -3,6 +3,9 @@ import Match from '../api/match'
 
 import { REPORT_DEFAULT_CONFIG } from './ReportConfig'
 
+/**
+ * Modulo principal de Report
+ */
 class Report {
     constructor(
         key = process.env.RIOT_API_KEY,
