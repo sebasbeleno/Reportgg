@@ -1,3 +1,5 @@
+import merge from 'lodash.merge'
+
 import Summoner from '../api/summoner'
 import Match from '../api/match'
 
@@ -15,7 +17,7 @@ class Report {
 
         config.api_key = key
 
-        this.config = config
+        this.config = merge(REPORT_DEFAULT_CONFIG, config)
 
         this.summoner = new Summoner(this.config)
         this.match = new Match(this.config)
