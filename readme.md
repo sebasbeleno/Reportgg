@@ -1,6 +1,7 @@
 
 ![Welcome to StackEdit!](https://i.imgur.com/1pgt3Dm.png)
 
+[![NPM](https://nodei.co/npm/reportgg.png)](https://nodei.co/npm/reportgg/)
 
 
 Una librería donde podrás trabajar fácilmente con la API de RiotGames.
