@@ -55,6 +55,8 @@ Todos los días trabajamos en Streaming en este hermosos proyecto a las 12 PM ho
 
  -  **report.match**
 
+ -  **report.league**
+
 
 
 ## Rate Limiting

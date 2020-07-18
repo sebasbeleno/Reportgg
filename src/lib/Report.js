@@ -2,6 +2,7 @@ import merge from 'lodash.merge'
 
 import Summoner from '../api/summoner'
 import Match from '../api/match'
+import League from '../api/league'
 
 import { REPORT_DEFAULT_CONFIG } from './ReportConfig'
 
@@ -21,6 +22,7 @@ class Report {
 
         this.summoner = new Summoner(this.config)
         this.match = new Match(this.config)
+        this.league = new League(this.config)
     }
 }
 

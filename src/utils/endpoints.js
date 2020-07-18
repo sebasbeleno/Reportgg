@@ -11,4 +11,7 @@ module.exports = {
             accountId: '/lol/match/v4/matchlists/by-account/',
         },
     },
+    league: {
+        summonerId: '/lol/league/v4/entries/by-summoner/',
+    },
 }

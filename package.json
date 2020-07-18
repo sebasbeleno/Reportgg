@@ -1,6 +1,7 @@
 {
     "name": "reportgg",
-    "version": "0.0.6",
+    "version": "0.0.7",
+    "repository": "https://github.com/SebastianHerrera/Reportgg.git",
     "author": "Sebasbeleno <https://sebasbeleno.com/",
     "description": "Modulo completo de obtención de datos de la API de Riot Games",
     "main": "index.js",
